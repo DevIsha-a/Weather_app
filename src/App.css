@@ -24,37 +24,40 @@ body{
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;  
-    text-align: center;  
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 .search{
-    height: 27px;
+    height: auto;
     width: 173px;
     border: 1px grey solid;
     border-radius: 13px;
     border-left: 7px #dd9113 solid;
-    border-right: 7px #dd9113 solid;
-    position: absolute;
-    margin: auto;
-   
-    left: 101px;
+    border-right: 7px #dd9113 solid; 
+    padding: 10px 20px;
+    margin: auto; 
     text-align: center; 
     cursor: pointer;
 }
 .result_box{
     width: 290px;
-    height: 310px;
+    height: max-content;
     background-color: transparent;
     background-color: aliceblue;
     opacity: .9;
     border-radius: 40px;
-    position: absolute;
+    /* position: absolute; */
     margin: auto;
     top: 100;
     bottom: 0;
     left: 0;
-    right: 0;  
-    text-align: center;  
+    right: 0;
+    text-align: center;
+    padding: 20px;
 
 }
 .supr{

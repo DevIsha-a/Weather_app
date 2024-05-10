@@ -4,14 +4,19 @@ import axios from 'axios'
   const api_key= 'f33a484cf794d08d0148764789aaba32';
   
   export const fetchData= async(query)=>{
-    const {data}= await axios.get(url, {
-      params:{
-        q:query,
-        units: 'metric',
-        APPID:api_key,
-
-      }
-    })
-    return data
+    try {
+      const {data}= await axios.get(url, {
+        params:{
+          q:query,
+          units: 'metric',
+          APPID:api_key,
+  
+        }
+      })
+      return data
+    } catch (error) {
+      return error.message
+    }
+   
   }
 
