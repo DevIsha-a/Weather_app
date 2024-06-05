@@ -66,3 +66,8 @@ body{
     color: white;
     border-radius: 10px;
 }
+@media (max-width:450px) {
+    .result_box{
+        width: 86vw;
+    }
+}
